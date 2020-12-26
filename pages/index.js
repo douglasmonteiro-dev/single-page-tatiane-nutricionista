@@ -48,7 +48,7 @@ export default function Home() {
 
           </Grid>
           <Grid xs={24}>
-          <Link href="#"> 
+          <Link href="/ebook"> 
           <Button type="secondary" ghost>
             <Book /><Spacer x={0.5}/>E-book
             </Button>
