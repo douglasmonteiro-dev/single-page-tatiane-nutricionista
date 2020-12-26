@@ -1,13 +1,17 @@
 import React from 'react'
-import { Image } from '@geist-ui/react'
+import { Link, Image } from '@geist-ui/react'
 
-function Cabecalho({title, subtitle}){
+function Cabecalho({ title, subtitle }) {
     return (
-            <header>
-                      <Image width={100} height={100} src="/images/logo.png" />
-                      <Image width={200} src="/images/letreiro.png" />
-            </header>
+        <header>
+            <Link href="/">
+                <Image width={100} height={100} src="/images/logo.png" />
+            </Link>
+            <Link href="/">
+                <Image width={200} src="/images/letreiro.png" />
+            </Link>
+        </header>
     );
 }
 
-export default  Cabecalho;
+export default Cabecalho;
