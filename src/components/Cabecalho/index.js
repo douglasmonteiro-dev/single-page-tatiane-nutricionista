@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Image } from '@geist-ui/react'
+import { Image } from '@geist-ui/react'
 
 function Cabecalho({title, subtitle}){
     return (

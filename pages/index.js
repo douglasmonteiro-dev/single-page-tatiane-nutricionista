@@ -25,7 +25,7 @@ export default function Home() {
           <Grid xs={24} alignContent="center">
             <Link href="https://api.whatsapp.com/send?phone=551199948414">
               <Button type="secondary" ghost>
-                <MessageCircle /> Whatsapp
+                <MessageCircle /><Spacer x={0.5}/>Whatsapp
              </Button>
             </Link>
 
@@ -34,7 +34,7 @@ export default function Home() {
           <Grid xs={24}>
             <Link href="https://www.facebook.com/NutriTatianeRibeiro">
               <Button type="secondary" ghost>
-                <Facebook /> Facebook
+                <Facebook /><Spacer x={0.5}/>Facebook
             </Button>
             </Link>
 
@@ -42,7 +42,7 @@ export default function Home() {
           <Grid xs={24}>
             <Link href="https://www.instagram.com/nutri.tatiane">
               <Button type="secondary" ghost>
-                <Instagram /> Instagram
+                <Instagram /><Spacer x={0.5}/>Instagram
             </Button>
             </Link>
 
@@ -50,7 +50,7 @@ export default function Home() {
           <Grid xs={24}>
           <Link href="#"> 
           <Button type="secondary" ghost>
-            <Book /> E-book
+            <Book /><Spacer x={0.5}/>E-book
             </Button>
             </Link>
 
