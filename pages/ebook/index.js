@@ -11,10 +11,13 @@ import { Page } from '@geist-ui/react'
 
 
 export default function Ebook() {
-  const [value, setValue] = useState()
-  const handler = (e) => {
-    setValue(e.target.value)
-    console.log(e.target.value)
+  const [emailValue, setEmailValue] = useState()
+  const [nameValue, setNameValue] = useState()
+  const emailHandler = (e) => {
+    setEmailValue(e.target.value)
+  }
+  const nameHandler = (e) => {
+    setNameValue(e.target.value)
   }
   
   return (
@@ -26,10 +29,10 @@ export default function Ebook() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} alignContent="center">
-            <Input clearable value={value} onChange={handler} placeholder="Nome Completo" status="success" ghost />
+            <Input clearable value={nameValue} onChange={nameHandler} placeholder="Nome Completo" status="secondary" />
           </Grid>
           <Grid xs={24} alignContent="center">
-            <Input clearable value={value} onChange={handler} placeholder="E-mail" status="success" ghost />
+            <Input clearable value={emailValue} onChange={emailHandler} placeholder="E-mail" status="secondary" />
           </Grid>
           <Grid xs={24}>
               <Button type="secondary" ghost>
