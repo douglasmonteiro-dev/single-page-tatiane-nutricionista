@@ -1,26 +1,29 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
+import { GeistProvider, CssBaseline } from '@geist-ui/react'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    text-align: center;
   }
 `
 
 const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
+  "palette": {
+    "background": "#f9ffed",
+    "foreground": "#09d32a",
+    "success": "#09d32a",
+    "successLight": "#5d8707",
+    "successDark": "#05b308"
+  }
 }
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <GeistProvider theme={theme}>
+      <CssBaseline />
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
+      <Component {...pageProps} />
+    </GeistProvider>
+
   )
 }
