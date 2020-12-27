@@ -93,7 +93,7 @@ const resetForm = () => {
             <Input clearable onClearClick={resetForm} value={data.email} onChange={(event) => handleChange({email: event.target.value})} placeholder="E-mail" status="success" />
           </Grid>
           <Grid xs={24}>
-              <Button type="secondary" onClick={formSubmit} ghost>
+              <Button type="secondary" onClick={formSubmit} disabled={data.name == '' || data.email == ''} ghost>
                 <Send /><Spacer x={0.5}/>{data.buttonText}
             </Button>
 
