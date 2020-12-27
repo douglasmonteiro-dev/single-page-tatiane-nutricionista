@@ -5,20 +5,78 @@ import Rodape from '../../src/components/Rodape'
 import { Button, Link, Spacer, Grid, Input } from '@geist-ui/react'
 import Send from '@geist-ui/react-icons/send'
 import {useState} from 'react'
+import axios from 'axios'
 
 import { Page } from '@geist-ui/react'
 
 
 
 export default function Ebook() {
-  const [emailValue, setEmailValue] = useState()
-  const [nameValue, setNameValue] = useState()
-  const emailHandler = (e) => {
-    setEmailValue(e.target.value)
+  const [data, setData] = useState({name: '', email: '', sent: false, buttonText: 'Enviar', err: ''})
+
+  const handleChange = (data) => {
+    if (data.name){
+      setData(prevState => ({
+        ...prevState,
+        name: data.name
+      }))
+    }
+    if (data.email){
+      setData(prevState => ({
+        ...prevState,
+        email: data.email
+      }))
+    }    
   }
-  const nameHandler = (e) => {
-    setNameValue(e.target.value)
-  }
+  const formSubmit = async (e) => {
+    e.preventDefault();
+
+    setData({
+        ...data,
+        buttonText: 'Enviando...'
+    })
+
+    await axios.post('/api/sendmail', data)
+    .then(res => {
+        if(res.data.result !=='success') {
+            setData({
+                ...data,
+                buttonText: 'Erro',
+                sent: false,
+                err: 'fail'
+            })
+            setTimeout(() => {
+                resetForm()
+            }, 6000)
+        } else {
+            setData({
+                ...data,
+                sent: true,
+                buttonText: 'Enviado',
+                err: 'success'
+            })
+            setTimeout(() => {
+                resetForm();
+            }, 6000)
+        }
+    }).catch( (err) => {
+        setData({
+            ...data,
+            buttonText: `Erro ${err.response.status}`,
+            err: 'fail'
+        })
+    })
+}
+const resetForm = () => {
+  setData({
+      name: '',
+      email: '',
+      message: '',
+      sent: false,
+      buttonText: 'Enviar',
+      err: ''
+  });
+}
   
   return (
     <Page>
@@ -29,14 +87,14 @@ export default function Ebook() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} alignContent="center">
-            <Input clearable value={nameValue} onChange={nameHandler} placeholder="Nome Completo" status="success" />
+            <Input clearable onClearClick={resetForm} value={data.name} onChange={(event)=>handleChange({name: event.target.value})} placeholder="Nome Completo" status="success" />
           </Grid>
           <Grid xs={24} alignContent="center">
-            <Input clearable value={emailValue} onChange={emailHandler} placeholder="E-mail" status="success" />
+            <Input clearable onClearClick={resetForm} value={data.email} onChange={(event) => handleChange({email: event.target.value})} placeholder="E-mail" status="success" />
           </Grid>
           <Grid xs={24}>
-              <Button type="secondary" ghost>
-                <Send /><Spacer x={0.5}/>Enviar
+              <Button type="secondary" onClick={formSubmit} ghost>
+                <Send /><Spacer x={0.5}/>{data.buttonText}
             </Button>
 
           </Grid>

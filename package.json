@@ -9,6 +9,7 @@
   "dependencies": {
     "@geist-ui/react": "^2.1.0-canary.2",
     "@geist-ui/react-icons": "^1.0.1",
+    "axios": "^0.21.1",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
