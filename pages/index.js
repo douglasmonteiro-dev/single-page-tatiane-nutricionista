@@ -23,7 +23,7 @@ export default function Home() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} alignContent="center">
-            <Link href="https://api.whatsapp.com/send?phone=551199948414">
+            <Link href="https://api.whatsapp.com/send?phone=5511959948414">
               <Button type="secondary" ghost>
                 <MessageCircle /><Spacer x={0.5}/>Whatsapp
              </Button>

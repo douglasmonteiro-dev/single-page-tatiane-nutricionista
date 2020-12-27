@@ -29,10 +29,10 @@ export default function Ebook() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} alignContent="center">
-            <Input clearable value={nameValue} onChange={nameHandler} placeholder="Nome Completo" status="secondary" />
+            <Input clearable value={nameValue} onChange={nameHandler} placeholder="Nome Completo" status="success" />
           </Grid>
           <Grid xs={24} alignContent="center">
-            <Input clearable value={emailValue} onChange={emailHandler} placeholder="E-mail" status="secondary" />
+            <Input clearable value={emailValue} onChange={emailHandler} placeholder="E-mail" status="success" />
           </Grid>
           <Grid xs={24}>
               <Button type="secondary" ghost>
