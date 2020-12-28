@@ -28,7 +28,7 @@ handler.post(async (req, res) => {
         const nome = req.body.nome;
         const email = req.body.email;
         const mensagem = 'Clique e faça o Dowload https://tatiane.ntr.br/livro.pdf';
-        const anexo = true;
+        const anexo = false;
         mailer(email, nome, mensagem, anexo)
             .then(response => res.json(response))
             .catch(error => res.json(error));
