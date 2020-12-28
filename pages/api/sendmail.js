@@ -2,7 +2,6 @@ import nextConnect from 'next-connect';
 import middleware from '../../middleware/database';
 import mailer from '../../middleware/mailer';
 const handler = nextConnect();
-handler.use(mailer);
 
 handler.get(async (req, res) => {
     const { data } = req.query;
@@ -29,7 +28,7 @@ handler.post(async (req, res) => {
         const nome = req.body.nome;
         const email = req.body.email;
         const mensagem = 'Clique e faça o Dowload https://tatiane.ntr.br/livro.pdf';
-        const anexo = false;
+        const anexo = true;
         mailer(email, nome, mensagem, anexo)
             .then(response => res.json(response))
             .catch(error => res.json(error));

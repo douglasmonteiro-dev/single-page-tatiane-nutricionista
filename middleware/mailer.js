@@ -6,12 +6,9 @@ module.exports = (email, nome, mensagem, anexo) => {
         host: 'smtp.gmail.com',
         port: 465,
         secure: true, //SSL/TLS
-        type: 'OAuth2',
         auth: {
             user: 'tatianeribeiro.nutri@gmail.com',
-            pass: '6370445422!!',
-            type: 'OAuth2',
-
+            pass: '6370445422!!'
         }
     })
 
@@ -28,7 +25,7 @@ module.exports = (email, nome, mensagem, anexo) => {
         mail.attachments = [];
         mail.attachments.push({
             filename: 'ebook.pdf',
-            href: 'https://www.saoluis.org/feira-do-conhecimento/wp-content/uploads/2020/11/63-BANNER-A-DESIGUALDADE-DE-ACESSO-%C3%80-UMA-ALIMENTA%C3%87%C3%83O-SAUD%C3%81VEL-NO-BRASIL_compressed.pdf',
+            href: 'www.tatiane.ntr.br/livro.pdf',
             contentType: 'application/pdf'
         })
     }
