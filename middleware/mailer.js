@@ -6,9 +6,12 @@ module.exports = (email, nome, mensagem, anexo) => {
         host: 'smtp.gmail.com',
         port: 465,
         secure: true, //SSL/TLS
+        type: 'OAuth2',
         auth: {
             user: 'tatianeribeiro.nutri@gmail.com',
-            pass: '6370445422!!'
+            pass: '6370445422!!',
+            type: 'OAuth2',
+
         }
     })
 
