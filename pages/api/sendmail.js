@@ -2,7 +2,7 @@ import nextConnect from 'next-connect';
 import middleware from '../../middleware/database';
 import mailer from '../../middleware/mailer';
 const handler = nextConnect();
-handler.use(middleware);
+handler.use(mailer);
 
 handler.get(async (req, res) => {
     const { data } = req.query;
