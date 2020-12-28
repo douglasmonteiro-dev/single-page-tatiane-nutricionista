@@ -25,7 +25,7 @@ module.exports = (email, nome, mensagem, anexo) => {
         mail.attachments = [];
         mail.attachments.push({
             filename: 'ebook.pdf',
-            href: 'https://tatiane.ntr.br/images/ebook.pdf',
+            href: 'https://github.com/dgsmonteiro/single-page-tatiane-nutricionista/raw/main/public/images/ebook.pdf',
             contentType: 'application/pdf'
         })
     }
