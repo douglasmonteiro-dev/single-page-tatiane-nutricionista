@@ -16,7 +16,7 @@ module.exports = (email, nome, mensagem, anexo) => {
     const mail = {
         from: "Tatiane Nutricionista <tatianeribeiro.nutri@gmail.com>",
         to: email,
-        subject: `${nome} baixe seu Ebook`,
+        subject: `Aqui está seu Ebook`,
         text: mensagem,
         //html: "<b>Opcionalmente, pode enviar como HTML</b>"
     }
@@ -25,7 +25,7 @@ module.exports = (email, nome, mensagem, anexo) => {
         mail.attachments = [];
         mail.attachments.push({
             filename: 'ebook.pdf',
-            href: 'https://github.com/dgsmonteiro/single-page-tatiane-nutricionista/raw/main/public/images/ebook.pdf',
+            href: 'http://189.28.128.100/nutricao/docs/taco/tab_bras_de_comp_de_alim_doc.pdf',
             contentType: 'application/pdf'
         })
     }
