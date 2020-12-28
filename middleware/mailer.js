@@ -25,7 +25,7 @@ module.exports = (email, nome, mensagem, anexo) => {
         mail.attachments = [];
         mail.attachments.push({
             filename: 'ebook.pdf',
-            href: 'http://189.28.128.100/nutricao/docs/taco/tab_bras_de_comp_de_alim_doc.pdf',
+            href: 'https://www.saoluis.org/feira-do-conhecimento/wp-content/uploads/2020/11/63-BANNER-A-DESIGUALDADE-DE-ACESSO-%C3%80-UMA-ALIMENTA%C3%87%C3%83O-SAUD%C3%81VEL-NO-BRASIL_compressed.pdf',
             contentType: 'application/pdf'
         })
     }
