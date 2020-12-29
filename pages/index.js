@@ -7,7 +7,7 @@ import Facebook from '@geist-ui/react-icons/facebook'
 import Calendar from '@geist-ui/react-icons/calendar'
 import Book from '@geist-ui/react-icons/book'
 import Instagram from '@geist-ui/react-icons/instagram'
-import Heart from '@geist-ui/react-icons/heart'
+import Activity from '@geist-ui/react-icons/activity '
 
 import { Page } from '@geist-ui/react'
 
@@ -59,7 +59,7 @@ export default function Home() {
           <Grid xs={24}>
             <Link href="/desafio">
               <Button type="secondary" ghost>
-                <Heart /><Spacer x={0.5} />Sob Medidas
+                <Activity /><Spacer x={0.5} />Sob Medidas
             </Button>
             </Link>
           </Grid>

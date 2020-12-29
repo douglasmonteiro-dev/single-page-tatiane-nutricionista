@@ -11,13 +11,13 @@ import { Page } from '@geist-ui/react'
 
 
 
-export default function Ebook() {
+export default function Desafio() {
   const [data, setData] = useState({ name: '', email: '', sent: false, buttonText: 'Inscreva-se', err: '' })
 
 
   return (
     <Page>
-      <Head title="Ebook - Tatiane Nutricionista" />
+      <Head title="Desafio - Tatiane Nutricionista" />
       <Page.Header>
         <Cabecalho title="Tatiane Ribeiro" subtitle="Nutricionista" />
       </Page.Header>
