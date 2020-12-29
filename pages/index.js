@@ -55,6 +55,13 @@ export default function Home() {
             </Link>
 
           </Grid>
+          <Grid xs={24}>
+          <Link href="https://pag.ae/7WJyRvb14"> 
+          <Button type="secondary" ghost>
+            <Book /><Spacer x={0.5}/>Desafio Sob Medidas
+            </Button>
+            </Link>
+          </Grid>
         </Grid.Container>
 
 
