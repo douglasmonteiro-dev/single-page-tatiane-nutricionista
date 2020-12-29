@@ -7,8 +7,7 @@ import Facebook from '@geist-ui/react-icons/facebook'
 import Calendar from '@geist-ui/react-icons/calendar'
 import Book from '@geist-ui/react-icons/book'
 import Instagram from '@geist-ui/react-icons/instagram'
-import Activity from '@geist-ui/react-icons/activity '
-
+import Activity from '@geist-ui/react-icons/activity'
 import { Page } from '@geist-ui/react'
 
 
