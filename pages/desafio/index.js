@@ -27,7 +27,7 @@ export default function Ebook() {
             <Text h3>Desafio Sob Medidas</Text>
           </Grid>
           <Grid xs={14} alignContent="center">
-            <Text p>Já pensou em trabalhar sua alimentação + condicionamento físico de forma prática e sem sair de casa?🍛💪</Text>
+            <Text p>Já pensou em trabalhar sua alimentação + condicionamento físico e emagrecer de forma prática e sem sair de casa?🍛💪</Text>
           </Grid>
           <Grid xs={14} alignContent="center">
             <Text blockquote>
