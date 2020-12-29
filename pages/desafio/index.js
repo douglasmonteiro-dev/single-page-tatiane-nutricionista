@@ -31,13 +31,13 @@ export default function Ebook() {
           </Grid>
           <Grid xs={14} alignContent="center">
             <Text blockquote>
-              Aguarde pois em breve teremos informações sobre as inscrições.
+              Aguarde, pois em breve teremos informações sobre as inscrições.
             </Text>
           </Grid>
           <Grid xs={24}>
           {/* <Link href="https://pag.ae/7WJyRvb14">  */}
             <Button type="secondary" disabled={data.name == '' || data.email == ''} ghost>
-              <Check /><Spacer x={0.5} />{data.buttonText}
+              <Check /><Spacer x={0.5} />Inscreva-se
             </Button>
             {/* </Link> */}
           </Grid>
