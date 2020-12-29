@@ -4,7 +4,7 @@ import Cabecalho from '../src/components/Cabecalho'
 import Rodape from '../src/components/Rodape'
 import { Button, Link, Spacer, Grid } from '@geist-ui/react'
 import Facebook from '@geist-ui/react-icons/facebook'
-import MessageCircle from '@geist-ui/react-icons/messageCircle'
+import Calendar from '@geist-ui/react-icons/calendar'
 import Book from '@geist-ui/react-icons/book'
 import Instagram from '@geist-ui/react-icons/instagram'
 import Heart from '@geist-ui/react-icons/heart'
@@ -26,7 +26,7 @@ export default function Home() {
           <Grid xs={24} alignContent="center">
             <Link href="https://api.whatsapp.com/send?phone=5511959948414">
               <Button type="secondary" ghost>
-                <MessageCircle /><Spacer x={0.5} />Whatsapp
+                <Calendar /><Spacer x={0.5} />Agendamento
              </Button>
             </Link>
 
