@@ -7,6 +7,7 @@ import Facebook from '@geist-ui/react-icons/facebook'
 import MessageCircle from '@geist-ui/react-icons/messageCircle'
 import Book from '@geist-ui/react-icons/book'
 import Instagram from '@geist-ui/react-icons/instagram'
+import Heart  from '@geist-ui/react-icons/heart'
 
 import { Page } from '@geist-ui/react'
 
@@ -58,7 +59,7 @@ export default function Home() {
           <Grid xs={24}>
           <Link href="https://pag.ae/7WJyRvb14"> 
           <Button type="secondary" ghost>
-            <Book /><Spacer x={0.5}/>Desafio Sob Medidas
+            <Heart /><Spacer x={0.5}/>Desafio Sob Medidas
             </Button>
             </Link>
           </Grid>
