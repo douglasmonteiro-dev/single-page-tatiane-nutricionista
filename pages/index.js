@@ -7,7 +7,7 @@ import Facebook from '@geist-ui/react-icons/facebook'
 import MessageCircle from '@geist-ui/react-icons/messageCircle'
 import Book from '@geist-ui/react-icons/book'
 import Instagram from '@geist-ui/react-icons/instagram'
-import Heart  from '@geist-ui/react-icons/heart'
+import Heart from '@geist-ui/react-icons/heart'
 
 import { Page } from '@geist-ui/react'
 
@@ -26,7 +26,7 @@ export default function Home() {
           <Grid xs={24} alignContent="center">
             <Link href="https://api.whatsapp.com/send?phone=5511959948414">
               <Button type="secondary" ghost>
-                <MessageCircle /><Spacer x={0.5}/>Whatsapp
+                <MessageCircle /><Spacer x={0.5} />Whatsapp
              </Button>
             </Link>
 
@@ -35,7 +35,7 @@ export default function Home() {
           <Grid xs={24}>
             <Link href="https://www.facebook.com/NutriTatianeRibeiro">
               <Button type="secondary" ghost>
-                <Facebook /><Spacer x={0.5}/>Facebook
+                <Facebook /><Spacer x={0.5} />Facebook
             </Button>
             </Link>
 
@@ -43,23 +43,23 @@ export default function Home() {
           <Grid xs={24}>
             <Link href="https://www.instagram.com/nutri.tatiane">
               <Button type="secondary" ghost>
-                <Instagram /><Spacer x={0.5}/>Instagram
+                <Instagram /><Spacer x={0.5} />Instagram
             </Button>
             </Link>
 
           </Grid>
           <Grid xs={24}>
-          <Link href="/ebook"> 
-          <Button type="secondary" ghost>
-            <Book /><Spacer x={0.5}/>E-book
+            <Link href="/ebook">
+              <Button type="secondary" ghost>
+                <Book /><Spacer x={0.5} />E-book
             </Button>
             </Link>
 
           </Grid>
           <Grid xs={24}>
-          <Link href="https://pag.ae/7WJyRvb14"> 
-          <Button type="secondary" ghost>
-            <Heart /><Spacer x={0.5}/>Desafio Sob Medidas
+            <Link href="/desafio">
+              <Button type="secondary" ghost>
+                <Heart /><Spacer x={0.5} />Sob Medidas
             </Button>
             </Link>
           </Grid>
