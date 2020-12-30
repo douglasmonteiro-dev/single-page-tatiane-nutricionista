@@ -2,7 +2,7 @@ import Head from '../src/components/Head'
 import styled from 'styled-components'
 import Cabecalho from '../src/components/Cabecalho'
 import Rodape from '../src/components/Rodape'
-import { Button, Link, Spacer, Grid } from '@geist-ui/react'
+import { Button, Link, Spacer, Grid, Avatar } from '@geist-ui/react'
 import Facebook from '@geist-ui/react-icons/facebook'
 import Calendar from '@geist-ui/react-icons/calendar'
 import Book from '@geist-ui/react-icons/book'
@@ -14,6 +14,7 @@ import { Page } from '@geist-ui/react'
 
 
 export default function Home() {
+  const url ='/images/avatar.png'
   return (
     <Page>
       <Head title="Home - Tatiane Nutricionista" />
@@ -22,6 +23,9 @@ export default function Home() {
       </Page.Header>
       <Page.Content>
         <Grid.Container gap={2} justify="center">
+        <Grid xs={24}>
+            <Avatar src={url} size="large" />
+          </Grid>
           <Grid xs={24} alignContent="center">
             <Link href="https://api.whatsapp.com/send?phone=5511959948414">
               <Button type="secondary" ghost>
@@ -62,6 +66,7 @@ export default function Home() {
             </Button>
             </Link>
           </Grid>
+
         </Grid.Container>
 
 
