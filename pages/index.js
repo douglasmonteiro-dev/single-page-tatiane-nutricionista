@@ -24,7 +24,7 @@ export default function Home() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
         <Grid xs={24}>
-            <Avatar src={url} size="large" />
+            <Avatar src={url} size="large" isSquare />
           </Grid>
           <Grid xs={24} alignContent="center">
             <Link href="https://api.whatsapp.com/send?phone=5511959948414">
