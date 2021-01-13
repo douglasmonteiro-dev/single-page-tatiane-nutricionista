@@ -51,14 +51,14 @@ export default function Home() {
             </Link>
 
           </Grid>
-          <Grid xs={24}>
+          {/* <Grid xs={24}>
             <Link href="/ebook">
               <Button type="secondary" ghost>
                 <Book /><Spacer x={0.5} />E-book
             </Button>
             </Link>
 
-          </Grid>
+          </Grid> */}
           <Grid xs={24}>
             <Link href="/desafio">
               <Button type="secondary" ghost>
