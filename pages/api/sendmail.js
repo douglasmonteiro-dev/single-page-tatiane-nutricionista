@@ -27,7 +27,17 @@ handler.post(async (req, res) => {
         // doc = await req.db.collection('ebook').findOne({ email: data.email })
         const nome = req.body.nome;
         const email = req.body.email;
-        const mensagem = 'Clique e faça o Dowload https://tatiane.ntr.br/livro.pdf';
+        const mensagem = `Olá, para garantir a promoção, clique no link e faça sua inscrição https://forms.gle/NWtC4mr9darGcXoA8`;
+        const anexo = false;
+        mailer(email, nome, mensagem, anexo)
+            .then(response => res.json(response))
+            .catch(error => res.json(error));
+    }
+    if (data.friendEmail) {
+        // doc = await req.db.collection('ebook').findOne({ email: data.email })
+        const nome = req.body.friendNome;
+        const email = req.body.friendEmail;
+        const mensagem = `Olá, para garantir a promoção, clique no link e faça sua inscrição https://forms.gle/NWtC4mr9darGcXoA8`;
         const anexo = false;
         mailer(email, nome, mensagem, anexo)
             .then(response => res.json(response))

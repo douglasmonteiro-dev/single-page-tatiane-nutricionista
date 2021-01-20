@@ -16,7 +16,7 @@ module.exports = (email, nome, mensagem, anexo) => {
     const mail = {
         from: "Tatiane Nutricionista <tatianeribeiro.nutri@gmail.com>",
         to: email,
-        subject: `Aqui está seu Ebook`,
+        subject: `Promoção Desafio Sob Medidas`,
         text: mensagem,
         //html: "<b>Opcionalmente, pode enviar como HTML</b>"
     }
