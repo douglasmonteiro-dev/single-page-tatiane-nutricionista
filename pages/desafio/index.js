@@ -12,8 +12,6 @@ import { Page } from '@geist-ui/react'
 
 
 export default function Desafio() {
-  const [data, setData] = useState({ name: '', email: '', sent: false, buttonText: 'Inscreva-se', err: '' })
-
 
   return (
     <Page>
@@ -31,15 +29,15 @@ export default function Desafio() {
           </Grid>
           <Grid xs={14} alignContent="center">
             <Text blockquote>
-              Aguarde, pois em breve teremos informações sobre as inscrições.
+              Não perca tempo, clique no botão abaixo e se inscreva.
             </Text>
           </Grid>
           <Grid xs={24}>
-          {/* <Link href="https://pag.ae/7WJyRvb14">  */}
-            <Button type="secondary" disabled={data.name == '' || data.email == ''} ghost>
+          <Link href="https://pag.ae/7WJyRvb14"> 
+            <Button type="secondary" ghost>
               <Check /><Spacer x={0.5} />Inscreva-se
             </Button>
-            {/* </Link> */}
+            </Link>
           </Grid>
         </Grid.Container>
 
