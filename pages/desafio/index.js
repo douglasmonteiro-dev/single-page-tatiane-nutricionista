@@ -35,7 +35,14 @@ export default function Desafio() {
           <Grid xs={24}>
           <Link href="https://forms.gle/VNmiUGbG9mS5y68u6"> 
             <Button type="secondary" ghost>
-              <Check /><Spacer x={0.5} />Inscreva-se
+              <Check /><Spacer x={0.5} />Inscrição Individual
+            </Button>
+            </Link>
+          </Grid>
+          <Grid xs={24}>
+          <Link href="/promocao"> 
+            <Button type="secondary" ghost>
+              <Check /><Spacer x={0.5} />Inscrição Casadinha
             </Button>
             </Link>
           </Grid>
