@@ -109,7 +109,7 @@ export default function Ebook() {
             <Text h3>Promoção Desafio Sob Medidas</Text>
           </Grid>
           <Grid xs={24} alignContent="center">
-            <Text p>Aproveite nossa promição, se inscrevendo junto com seu amigo você paga mais barato?🍛💪</Text>
+            <Text p>Aproveite nossa promoção, se inscrevendo junto com seu amigo você paga mais barato 🍛💪</Text>
           </Grid>
           <Grid xs={24} alignContent="center">
             <Input clearable onClearClick={resetForm} value={data.name} onChange={(event) => handleChange({ name: event.target.value })} placeholder="Seu nome completo" status="success" />
