@@ -33,11 +33,11 @@ export default function Desafio() {
             </Text>
           </Grid>
           <Grid xs={24}>
-          <Link href="https://forms.gle/VNmiUGbG9mS5y68u6"> 
-            <Button type="secondary" ghost>
-              <Check /><Spacer x={0.5} />Promoção Relâmpago
+          {/* <Link href="https://forms.gle/VNmiUGbG9mS5y68u6">  */}
+            <Button type="secondary" ghost disabled>
+              <Check /><Spacer x={0.5} />Inscrições encerradas
             </Button>
-            </Link>
+            {/* </Link> */}
           </Grid>
         </Grid.Container>
       </Page.Content>

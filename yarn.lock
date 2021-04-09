@@ -992,7 +992,6 @@
   dependencies:
     "anymatch" "~3.1.1"
     "braces" "~3.0.2"
-    "fsevents" "~2.1.2"
     "glob-parent" "~5.1.0"
     "is-binary-path" "~2.1.0"
     "is-glob" "~4.0.1"
@@ -2556,7 +2555,6 @@
     "denque" "^1.4.1"
     "require_optional" "^1.0.1"
     "safe-buffer" "^5.1.2"
-    "saslprep" "^1.0.0"
   optionalDependencies:
     "saslprep" "^1.0.0"
 
@@ -2676,7 +2674,6 @@
     "resolve-url-loader" "3.1.2"
     "sass-loader" "10.0.5"
     "schema-utils" "2.7.1"
-    "sharp" "0.26.2"
     "stream-browserify" "3.0.0"
     "style-loader" "1.2.1"
     "styled-jsx" "3.3.2"
@@ -4256,7 +4253,6 @@
     "chokidar" "^3.4.1"
     "graceful-fs" "^4.1.2"
     "neo-async" "^2.5.0"
-    "watchpack-chokidar2" "^2.0.1"
   optionalDependencies:
     "watchpack-chokidar2" "^2.0.1"
 
