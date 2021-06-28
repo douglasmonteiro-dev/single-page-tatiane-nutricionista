@@ -22,7 +22,7 @@ export default function Desafio() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} alignContent="center">
-            <Text h3>Desafio Sob Medidas</Text>
+            <Text h3>Desafio Sob Medidas - 5ª Edição</Text>
           </Grid>
           <Grid xs={14} alignContent="center">
             <Text p>Já pensou em trabalhar sua alimentação + condicionamento físico e emagrecer de forma prática e sem sair de casa?🍛💪</Text>
@@ -33,11 +33,18 @@ export default function Desafio() {
             </Text>
           </Grid>
           <Grid xs={24}>
-          {/* <Link href="https://forms.gle/VNmiUGbG9mS5y68u6">  */}
-            <Button type="secondary" ghost disabled>
-              <Check /><Spacer x={0.5} />Inscrições encerradas
+          <Link href="https://forms.gle/VNmiUGbG9mS5y68u6"> 
+            <Button type="secondary" ghost>
+              <Check /><Spacer x={0.5} />Inscrição Individual
             </Button>
-            {/* </Link> */}
+            </Link>
+          </Grid>
+          <Grid xs={24}>
+          <Link href="/promocao"> 
+            <Button type="secondary" ghost>
+              <Check /><Spacer x={0.5} />Inscrição Promocional
+            </Button>
+            </Link>
           </Grid>
         </Grid.Container>
       </Page.Content>

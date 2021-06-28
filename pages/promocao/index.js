@@ -110,6 +110,7 @@ export default function Ebook() {
           </Grid>
           <Grid xs={24} alignContent="center">
             <Text p>Aproveite nossa promoção, se inscrevendo junto com seu amigo você paga mais barato 🍛💪</Text>
+            <Text p>Preencha o formulário abaixo e receba no seu e-mail o link promocional.</Text>
           </Grid>
           <Grid xs={24} alignContent="center">
             <Input clearable onClearClick={resetForm} value={data.name} onChange={(event) => handleChange({ name: event.target.value })} placeholder="Seu nome completo" status="success" />
