@@ -27,7 +27,7 @@ handler.post(async (req, res) => {
         // doc = await req.db.collection('ebook').findOne({ email: data.email })
         const nome = req.body.nome;
         const email = req.body.email;
-        const mensagem = `Olá, para garantir a promoção, clique no link e faça sua inscrição https://forms.gle/NWtC4mr9darGcXoA8`;
+        const mensagem = `Olá, para garantir a promoção, clique no link e faça sua inscrição https://forms.gle/RWnKMpPybhSYiMLR7`;
         const anexo = false;
         mailer(email, nome, mensagem, anexo)
             .then(response => res.json(response))
@@ -37,7 +37,7 @@ handler.post(async (req, res) => {
         // doc = await req.db.collection('ebook').findOne({ email: data.email })
         const nome = req.body.friendNome;
         const email = req.body.friendEmail;
-        const mensagem = `Olá, para garantir a promoção, clique no link e faça sua inscrição https://forms.gle/NWtC4mr9darGcXoA8`;
+        const mensagem = `Olá, para garantir a promoção, clique no link e faça sua inscrição https://forms.gle/RWnKMpPybhSYiMLR7`;
         const anexo = false;
         mailer(email, nome, mensagem, anexo)
             .then(response => res.json(response))

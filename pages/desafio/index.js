@@ -33,7 +33,7 @@ export default function Desafio() {
             </Text>
           </Grid>
           <Grid xs={24}>
-          <Link href="https://forms.gle/VNmiUGbG9mS5y68u6"> 
+          <Link href="https://forms.gle/sWY5mbEWu9SQDUsx9"> 
             <Button type="secondary" ghost>
               <Check /><Spacer x={0.5} />Inscrição Individual
             </Button>
