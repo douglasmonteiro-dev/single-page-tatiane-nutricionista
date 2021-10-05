@@ -22,7 +22,7 @@ export default function Desafio() {
       <Page.Content>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} alignContent="center">
-            <Text h3>Desafio Sob Medidas - 5ª Edição</Text>
+            <Text h3>Desafio Sob Medidas - 6ª Edição</Text>
           </Grid>
           <Grid xs={14} alignContent="center">
             <Text p>Já pensou em trabalhar sua alimentação + condicionamento físico e emagrecer de forma prática e sem sair de casa?🍛💪</Text>
